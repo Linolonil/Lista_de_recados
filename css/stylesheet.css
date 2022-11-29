@@ -1,0 +1,129 @@
+#nav {
+    justify-content: space-around;
+    width: 100%;
+    height: 10vh;
+    background-color: #201B2C;
+    color: #00FF88;
+    font-size: 2em;
+    text-align: center;
+    line-height: 14vh;
+}
+
+/* --------------------------- Form --------------------------- */
+body{
+    background: #201B2C;
+}
+
+#input-data {
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 5vh;
+    display: flex;
+}
+
+.input-text {
+    flex: 1;
+    min-width: 210px;
+    margin: 5px;
+    height: 35px;
+    padding-left: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #0bb6f4;
+    background-color: #514869;
+    outline: none;
+    color: #fff;
+}
+.input-text::placeholder{
+    color:#fff ;
+}
+#descricao,#detalhamento{
+    background-color: #514869;
+}
+.input-btn {
+    flex: 1;
+    margin: 5px;
+    height: 39px;
+    border: 1px solid;
+    border-color:  #0bb6f4;
+    cursor: pointer;
+    color: #f0ffffde;
+
+}
+#salvar{
+    background-color:  #0bb6f4;;
+}
+
+/* --------------------------- Table --------------------------- */
+
+#myTable {
+    font-family: Ubuntu;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    border-collapse: collapse;
+}
+
+#myTable th {
+    background-color: #2F2841;
+    padding: 10px;
+    color: white;
+    font-weight: 100;
+    border: none;
+}
+
+#myTable td, th{
+    border: 1px solid #0bb6f4;
+    padding: 8px;
+    background-color: #514869;
+    color: #fff;
+}
+
+#myTable td{
+    padding: 5px;
+}
+
+#myTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#myTable tr:hover {
+    background-color: #ddd;
+}
+
+.remove-btn{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-width: 0px;
+    background-color: red;;
+    cursor: pointer; 
+    color: #fff;
+}
+.edit-btn{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-width: 0px;
+    background-color: #0bb6f4;
+    cursor: pointer; 
+    color: #fff;
+}
+.tabela_att{
+    margin-top: 20px;
+    margin-left: 4.5vw ;
+    width: 90vw;
+    text-align: center;
+    
+}
+#button-logout{
+    width: 40px;
+    text-align: center;
+    margin-left: 65vw;
+    height: 40px;
+    border: 1px solid red;
+    background-color: red;
+    cursor: pointer;
+    color: #f0ffff;
+
+}

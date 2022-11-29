@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Página de recados online</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <script type="text/javascript" src="js/addTable.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <div>
+        <div id="nav">
+          Meus recados Online
+          <input id="button-logout" onclick="logout()" value="Sair" />
+        </div>
+      </div>
+      <section id="table">
+        <form id="transaction-form">
+          <div id="input-data">
+            <input
+              id="descricao"
+              class="input-text"
+              placeholder="Descrição"
+              type="text"
+              required
+            />
+            <input
+              id="detalhamento"
+              class="input-text"
+              placeholder="Detalhamento"
+              type="text"
+              required
+            />
+            <input
+              id="salvar"
+              class="input-btn"
+              type="button"
+              value="Salvar"
+              onclick="addToTable()"
+            />
+          </div>
+        </form>
+
+        <table class="tabela_att">
+          <thead id="0">
+            <tr>
+              <div>
+                <th class="input-btn">#</th>
+                <th class="input-btn">Descrição</th>
+                <th class="input-btn">Detalhamento</th>
+                <th class="input-btn" colspan="2">Ação</th>
+              </div>
+            </tr>
+          </thead>
+          <tbody class="tabela" id="myTable"></tbody>
+        </table>
+      </section>
+
+      <!--<footer class="mt-auto">
+        <p class="text-muted text-footer">
+          Desenvolvido por
+          <a href="https://github.com/Linolonil" class="footer-table">
+            Lino Jorge
+          </a>
+          © 2022
+        </p>
+      </footer>-->
+    </main>
+  </body>
+</html>
